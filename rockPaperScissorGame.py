@@ -1,5 +1,9 @@
 import random
 
+print(" ")
+print("A ROCK PAPER SCISSOR GAME")
+print(" ")
+
 while True:
     choices = ["rock","paper","scissors"]
     computer = random.choice(choices)
@@ -19,21 +23,22 @@ while True:
         print("its a tie.")
     elif computer == "rock":
         if player == "paper":
-            print("player win.")
+            print("you win.")
         elif player == "scissors":
-            print("computer wins.")
+            print("you loose.")
     elif computer == "paper":
         if player == "rock":
-            print("computer wins.")
+            print("you loose.")
         elif player == "scissors":
-            print("player wins.")
+            print("you win.")
     elif computer == "scissors":
         if player == "rock":
-            print("player wins.")
+            print("you win.")
         elif player == "paper":
-            print("computer wins.")
+            print("you loose.")
             
     play_again = input("play again (y,n): ").lower()
-    if play_again != "yes":
+    if play_again != "y":
         break
-print("bye")
+    
+print("THANKS FOR PLAYING, BYE!")
